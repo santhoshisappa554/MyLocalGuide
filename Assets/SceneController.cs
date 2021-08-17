@@ -3,18 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class SceneController : MonoBehaviour
 {
     public static string keyword;
+    
 
     public void Start()
     {
         Debug.Log(keyword);
+        
     }
     public void Quit()
     {
         Application.Quit();
-        SceneManager.LoadScene(0);
+        
     }
 
     public void ChangeScene(string sceneName)
